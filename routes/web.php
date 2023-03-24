@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('cache', [CacheController::class, 'index']);
+Route::get('cache/{id}', [CacheController::class, 'index']);
